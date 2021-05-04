@@ -1,8 +1,8 @@
-# Endpoint DOCUMENTATTION 
+# Endpoint DOCUMENTATION 
 
 image example: https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg
 
-#Resizing image
+# Resizing image
 *URL: 
 http://localhost:8080/magic-image?url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg&resize=300x200
 
@@ -15,7 +15,7 @@ request type: Get
 code: 200
 content: resized image 
 
-#Converting images between formats
+# Converting images between formats
 *URL: 
 http://localhost:8080/magic-image?convert=png&url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg
 
@@ -28,7 +28,7 @@ request type: Get
 code: 200
 content: converted image 
 
-#Cropping images
+# Cropping images
 *URL: 
 http://localhost:8080/magic-image?crop=90,90,300,200&url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg
 
@@ -41,7 +41,7 @@ request type: Get
 code: 200
 content: cropped image 
 
-#Resampling images to different quality levels
+# Resampling images to different quality levels
 *URL: 
 http://localhost:8080/magic-image?resample=100&url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg
 
@@ -54,7 +54,7 @@ request type: Get
 code: 200
 content: Resampled image 
 
-#Rotations
+# Rotations
 *URL: 
 http://localhost:8080/magic-image?rotate=50&url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg
 
@@ -67,7 +67,7 @@ request type: Get
 code: 200
 content: rotated image 
 
-# Filters like grayscale, posterization, etc*
+# Filters like grayscale, posterization, etc
 *URL: 
 http://localhost:8080/magic-image?filter=grayscale,blur&url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg
 
@@ -80,7 +80,7 @@ request type: Get
 code: 200
 content: filtred image 
 
-#AI for facial detection
+# AI for facial detection
 *URL: 
 http://localhost:8080/magic-image?url=https://visavie.com/app/uploads/2020/10/comment-aider-personnes-agees-au-quotidien-1-42.jpg&face
 
@@ -93,7 +93,7 @@ request type: Get
 code: 200
 content: image with detected faces
 
-#NOTE: We can use each parameter individually as I explained above or with other parameters
+# NOTE: We can use each parameter individually as I explained above or with other parameters
 *example:
 we can resize, rotate and filter image:
 
