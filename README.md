@@ -1,29 +1,11 @@
-# Incedo's "Imaginary" Service
-
-Hi! Welcome to Incedo!
-
-Extensive market research has shown that our users are tired of sending gigantic
-full-size images to their customers. They are clamoring for a service that can
-manipulate remote images on demand.
 
 We'd like you to develop such a service.
 
-Our main programming language is JavaScript, and we've provided a skeleton
-project we'd like you to develop within. These are hard requirements:
-
 * The server environment is NodeJS
-* Requests need to be served by an [express](https://expressjs.com/) webserver
-  * A skeleton of routes already exists at [lib/routes.js](lib/routes.js).
-* Needs to use the [sharp](http://sharp.pixelplumbing.com/en/stable/) image
-  library
-  * This is already installed in the project
-
-You are free to install any other packages you need to accomplish your goals.
 
 ## Project Scope: A Small Prototype
 
-Of course, our users want the sun, the moon, and the stars. Among the long list
-of features they've asked for are:
+image manipulator:
 
 * Resizing image*
 * Converting images between formats*
@@ -37,13 +19,6 @@ Our users host their own images, and need a service that will process and
 deliver their remote image on-demand (no pre-processing), for example from an
 &lt;img&gt; tag on a webpage.
 
-Obviously it's not possible to implement all of those features within a short
-interview.  Therefore, please **provide a minimum viable product following the mandatory functionalities having the (\*) sign.** 
-
-
-Finally: We're all programmers. We all use StackOverflow and Google, and
-we all forget the argument order of `Array#reduce`. Please develop like you
-normally would and use Google, MDN, whatever you need.
 
 ##Hint
 ```
@@ -121,27 +96,3 @@ the server will autoreload.
 If you'd like to debug your server code and have Chrome, go ahead and visit:
 
 [about://inspect](about://inspect)
-
-### Project Structure
-
-This project is build around a basic `express` (https://expressjs.com/)
-server. There's not too many pieces. The directory layout looks like:
-
-```
-/                -- repo root
-|
-|- lib/          -- major source code
-|  |- logger.js  -- creates a logger object
-|  |- server.js  -- creates an express server, attaches logging and adds routes
-|  \- routes.js  -- route handlers, good place to start working
-|
-|- scripts/      -- helper script directory
-|  \- npm        -- runs npm inside of docker
-|
-\- index.js      -- entrypoint that starts the server
-```
-
-## License
-
-Copyright (C) 2019 Incedo Services GmbH. Please do not redistribute, we use
-this project for interviews / hiring. Thanks.
